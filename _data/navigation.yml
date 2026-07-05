@@ -1,9 +1,27 @@
 main:
-  - title: "Posts"
-    url: /posts/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
-  - title: "About"
-    url: /about/
+  - title: "Home"
+    url: /
+
+  - title: "Executive Committee"
+    url: /executive/
+
+  - title: "Members"
+    url: /members/
+
+  - title: "Events"
+    url: /events/
+
+  - title: "Gallery"
+    url: /gallery/
+
+  - title: "Documents"
+    url: /documents/
+
+  - title: "Sponsors"
+    url: /sponsors/
+
+  - title: "Join Us"
+    url: /join/
+
+  - title: "Contact"
+    url: /contacts/

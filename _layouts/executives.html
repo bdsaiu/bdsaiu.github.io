@@ -1,0 +1,108 @@
+---
+layout: default
+---
+
+<link rel="stylesheet" href="{{ '/assets/css/executives.css' | relative_url }}">
+
+<main class="executive-page">
+
+    <section class="executive-hero">
+
+        <div class="executive-container">
+
+            <p class="eyebrow">BDSA Leadership</p>
+
+            <h1>Executive Committee</h1>
+
+            <p class="hero-subtitle">
+                Meet the team leading the Bangladeshi Student Association
+                at Indiana University Bloomington.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="team-section">
+
+        <div class="executive-container">
+
+            <div class="team-grid">
+
+                {% assign advisor = site.data.executive.advisor %}
+
+                <article class="profile-card advisor-card">
+
+                    <div class="profile-image-wrap">
+                        <img
+                            src="{{ '/assets/images/executive/' | append: advisor.image | relative_url }}"
+                            alt="{{ advisor.name }}"
+                            class="profile-image"
+                        >
+                    </div>
+
+                    <div class="profile-info">
+
+                        <span class="role-badge advisor-badge">
+                            {{ advisor.title }}
+                        </span>
+
+                        <h2>{{ advisor.name }}</h2>
+
+                        <p class="affiliation">
+                            {{ advisor.affiliation }}
+                        </p>
+
+                        {% if advisor.email %}
+                        <a href="mailto:{{ advisor.email }}" class="email-link">
+                            {{ advisor.email }}
+                        </a>
+                        {% endif %}
+
+                    </div>
+
+                </article>
+
+                {% for member in site.data.executive.committee %}
+
+                <article class="profile-card {% if member.title == 'President' %}president-card{% endif %}">
+
+                    <div class="profile-image-wrap">
+                        <img
+                            src="{{ '/assets/images/executive/' | append: member.image | relative_url }}"
+                            alt="{{ member.name }}"
+                            class="profile-image"
+                        >
+                    </div>
+
+                    <div class="profile-info">
+
+                        <span class="role-badge {% if member.title == 'President' %}president-badge{% endif %}">
+                            {{ member.title }}
+                        </span>
+
+                        <h2>{{ member.name }}</h2>
+
+                        <p class="affiliation">
+                            {{ member.affiliation }}
+                        </p>
+
+                        {% if member.email %}
+                        <a href="mailto:{{ member.email }}" class="email-link">
+                            {{ member.email }}
+                        </a>
+                        {% endif %}
+
+                    </div>
+
+                </article>
+
+                {% endfor %}
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>

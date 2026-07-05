@@ -1,0 +1,38 @@
+advisor:
+  name: Dr. Sajal Islam
+  title: Faculty Advisor
+  image: ad.jpeg
+  email: SajIslam@iu.edu
+  affiliation: Postdoctoral Fellow, IU-CREATE
+
+committee:
+
+  - name: Mst Shohely Akter
+    title: President
+    image: pre.jpeg
+    email: shoakte@iu.edu
+    affiliation: PhD Student, Indiana University School of Education
+
+  - name: Nilambar Halder Tonmoy
+    title: Vice President
+    image: vp.jpg
+    email: nhaldert@iu.edu
+    affiliation: PhD Student, Luddy School of Informatics, Computing, and Engineering
+
+  - name: Neil M. Nahian
+    title: General Secretary
+    image: gs.jpg
+    email: smnislam@iu.edu
+    affiliation: Master's Student, O'Neill School of Public and Environmental Affairs
+
+  - name: Farhan Ishraqqul Islam
+    title: Treasurer
+    image: tr.jpg
+    email: fiislam@iu.edu
+    affiliation: PhD Student, Department of Economics
+
+  - name: Shegufta Rodoshi Rahman
+    title: Communication Officer
+    image: com.jpeg
+    email: srrahman@iu.edu
+    affiliation: Master's Student, O'Neill School of Public and Environmental Affairs
