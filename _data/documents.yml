@@ -1,0 +1,105 @@
+title: Documents & Resources
+
+subtitle: >
+  Official documents, helpful resources, and important forms for members
+  of the Bangladeshi Student Association at Indiana University Bloomington.
+
+documents:
+
+  ####################################################################
+  # OFFICIAL DOCUMENTS
+  ####################################################################
+
+  - title: Constitution of BDSA
+    category: Official Document
+    icon: file
+
+    description: >
+      Official constitution of the Bangladeshi Student Association at
+      Indiana University Bloomington, including organizational structure,
+      membership, elections, executive responsibilities, and governing
+      policies.
+
+    file: constitution.pdf
+
+  ####################################################################
+  # STUDENT RESOURCES
+  ####################################################################
+
+  - title: Living in Bloomington Guide
+    category: Student Resource
+    icon: home
+
+    description: >
+      A comprehensive guide for incoming students covering housing,
+      transportation, banking, groceries, healthcare, utilities,
+      communication, and everyday life in Bloomington.
+
+    file: living-in-bloomington-guide.pdf
+
+  - title: Transportation Guide
+    category: Student Resource
+    icon: bus
+
+    description: >
+      Information about IU Campus Bus, Bloomington Transit,
+      airport shuttle services, parking, biking, taxis,
+      and transportation around Bloomington.
+
+    file: transportation.pdf
+
+  - title: Grocery & Shopping Guide
+    category: Student Resource
+    icon: shopping-cart
+
+    description: >
+      A quick reference to grocery stores, international markets,
+      household shopping locations, and essential stores
+      in Bloomington.
+
+    file: store.pdf
+
+  - title: Indiana BMV Driver's Manual
+    category: Student Resource
+    icon: car
+
+    description: >
+      Official Indiana Bureau of Motor Vehicles handbook for obtaining
+      an Indiana learner's permit and driver's license.
+
+    file: drivers-manual.pdf
+
+  - title: Indiana BMV Quick Guide
+    category: Student Resource
+    icon: id-card
+
+    description: >
+      A quick reference guide prepared by BDSA covering the learner's
+      permit exam, required documents, driving test eligibility,
+      and important information for international students.
+
+    file: BMVGuide.pdf
+
+  ####################################################################
+  # FORMS
+  ####################################################################
+
+  - title: Membership Registration Form
+    category: Form
+    icon: clipboard
+
+    description: >
+      Complete this form to become a member of the Bangladeshi Student
+      Association at Indiana University Bloomington.
+
+    external_url: https://docs.google.com/forms/d/1T1rrdKhqpGTrCJFvQUJL3ItcmA9G5XwwHB0CB58kIdQ/viewform
+
+  - title: Reimbursement Request Form
+    category: Form
+    icon: receipt
+
+    description: >
+      Submit this form to request reimbursement for approved
+      BDSA-related expenses.
+
+    external_url: https://docs.google.com/forms/d/10VYtt6EUwvC7AKO-fXbJHnNFych_Th0GurALjKI5l-Q/viewform
