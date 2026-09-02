@@ -1,0 +1,303 @@
+---
+layout: default
+---
+
+<link rel="stylesheet"
+href="{{ '/assets/css/events.css' | relative_url }}">
+
+<main class="events-page">
+
+<!-- =======================================================
+Hero
+======================================================= -->
+
+<section class="events-hero">
+
+  <div class="events-container">
+
+    <span class="hero-eyebrow">BDSA AT IU BLOOMINGTON</span>
+
+    <h1>{{ site.data.events.title }}</h1>
+
+    <p>
+      {{ site.data.events.subtitle }}
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- =======================================================
+Next Event
+======================================================= -->
+
+<section class="events-section">
+
+  <div class="events-container">
+
+    <div class="section-header">
+
+      <div>
+        <span class="section-label">COMING UP</span>
+        <h2 class="section-heading">Next Event</h2>
+      </div>
+
+    </div>
+
+    {% assign upcoming = site.data.events.upcoming %}
+
+    <div class="upcoming-card">
+
+      <div class="upcoming-decoration"></div>
+
+      <div class="upcoming-content">
+
+        <div class="upcoming-meta">
+
+          <span class="next-badge">
+            NEXT EVENT
+          </span>
+
+          <span class="season-badge">
+            {{ upcoming.season }}
+          </span>
+
+        </div>
+
+        <h2>
+          {{ upcoming.title }}
+        </h2>
+
+        <div class="upcoming-date">
+
+          <span class="calendar-icon">📅</span>
+
+          <span>
+            {{ upcoming.date }}
+          </span>
+
+        </div>
+
+        <p>
+          {{ upcoming.description }}
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =======================================================
+Annual Event Calendar
+======================================================= -->
+
+<section class="events-section calendar-section">
+
+  <div class="events-container">
+
+    <div class="section-header">
+
+      <div>
+
+        <span class="section-label">
+          THROUGHOUT THE YEAR
+        </span>
+
+        <h2 class="section-heading">
+          2026–27 Event Calendar
+        </h2>
+
+        <p class="section-description">
+          BDSA organizes and participates in events throughout the
+          academic year. Dates marked as tentative may change based
+          on university schedules and event availability.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="timeline">
+
+      {% for event in site.data.events.events %}
+
+      <article class="timeline-item">
+
+        <div class="timeline-marker">
+
+          <div class="timeline-icon">
+
+            {% case event.icon %}
+
+            {% when "fair" %}
+              🎪
+
+            {% when "meeting" %}
+              👥
+
+            {% when "picnic" %}
+              🧺
+
+            {% when "world" %}
+              🌎
+
+            {% when "language" %}
+              🌐
+
+            {% when "boishakh" %}
+              🎉
+
+            {% else %}
+              📅
+
+            {% endcase %}
+
+          </div>
+
+        </div>
+
+
+        <div class="event-card">
+
+          <div class="event-card-top">
+
+            <div class="event-date-area">
+
+              <span class="event-season">
+                {{ event.season }}
+              </span>
+
+              <span class="event-date">
+                {{ event.date }}
+              </span>
+
+            </div>
+
+
+            {% if event.status == "completed" %}
+
+            <span class="status-badge status-completed">
+              Completed
+            </span>
+
+            {% elsif event.status == "upcoming" %}
+
+            <span class="status-badge status-upcoming">
+              Upcoming
+            </span>
+
+            {% elsif event.status == "tentative" %}
+
+            <span class="status-badge status-tentative">
+              Tentative
+            </span>
+
+            {% else %}
+
+            <span class="status-badge status-annual">
+              Annual Event
+            </span>
+
+            {% endif %}
+
+          </div>
+
+
+          <h3>
+            {{ event.title }}
+          </h3>
+
+
+          <span class="event-timing">
+            {{ event.timing }}
+          </span>
+
+
+          <p class="event-description">
+            {{ event.description }}
+          </p>
+
+
+          {% if event.note %}
+
+          <div class="event-note">
+
+            <span class="note-icon">
+              ℹ
+            </span>
+
+            <p>
+              {{ event.note }}
+            </p>
+
+          </div>
+
+          {% endif %}
+
+        </div>
+
+      </article>
+
+      {% endfor %}
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =======================================================
+Gallery
+======================================================= -->
+
+<section class="events-section gallery-section">
+
+  <div class="events-container">
+
+    <div class="gallery-card">
+
+      <div class="gallery-icon">
+        📸
+      </div>
+
+      <div class="gallery-content">
+
+        <span class="section-label">
+          MEMORIES FROM OUR COMMUNITY
+        </span>
+
+        <h2>
+          Explore Past Events
+        </h2>
+
+        <p>
+          Visit our gallery to explore photos from BDSA cultural
+          celebrations, community gatherings, student activities,
+          and other events throughout the years.
+        </p>
+
+      </div>
+
+      <a
+        href="{{ '/gallery/' | relative_url }}"
+        class="gallery-button">
+
+        Visit Gallery
+        <span>→</span>
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+</main>

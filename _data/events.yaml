@@ -1,0 +1,133 @@
+title: Events
+
+subtitle: >
+  From welcoming new students to celebrating Bengali culture,
+  BDSA brings the Bangladeshi community at Indiana University
+  Bloomington together throughout the academic year.
+
+upcoming:
+  title: BDSA Call-Out Meeting
+  date: September 6, 2026
+  season: Fall 2026
+  description: >
+    Join us for BDSA's annual Call-Out Meeting. The Executive Committee
+    will introduce the organization, explain what BDSA does, share
+    opportunities for students to get involved, and present our plans
+    and activities for the academic year.
+
+events:
+
+  ####################################################################
+  # FALL STUDENT INVOLVEMENT FAIR
+  ####################################################################
+
+  - title: Fall Student Involvement Fair
+    date: August 27, 2026
+    timing: Last Thursday of August
+    season: Fall
+    status: completed
+    icon: fair
+
+    description: >
+      BDSA participates in Indiana University's Fall Student Involvement
+      Fair by hosting an organization table where new and returning
+      students can meet members of the Executive Committee, learn about
+      BDSA, and discover ways to become involved with the organization.
+
+    note: >
+      The Student Involvement Fair brings together hundreds of student
+      organizations, campus resources, and community partners at
+      Indiana University Bloomington.
+
+  ####################################################################
+  # CALL-OUT MEETING
+  ####################################################################
+
+  - title: BDSA Call-Out Meeting
+    date: September 6, 2026
+    timing: Early September
+    season: Fall
+    status: upcoming
+    icon: meeting
+
+    description: >
+      The annual Call-Out Meeting introduces new students and prospective
+      members to BDSA. The Executive Committee discusses the purpose of
+      the organization, its activities and community role, ways to get
+      involved, and the planned events and initiatives for the academic
+      year.
+
+  ####################################################################
+  # FALL PICNIC
+  ####################################################################
+
+  - title: BDSA Fall Picnic
+    date: Late September – Early October
+    timing: Fall Semester
+    season: Fall
+    status: tentative
+    icon: picnic
+
+    description: >
+      BDSA's Fall Picnic is organized each year to welcome incoming
+      students and help them connect with the Bangladeshi community at
+      Indiana University Bloomington. The entire community is welcome
+      to join for an informal gathering featuring food, games, and
+      opportunities to meet new people.
+
+  ####################################################################
+  # WORLD FAIR
+  ####################################################################
+
+  - title: World Fair
+    date: December
+    timing: Late Fall Semester
+    season: Fall
+    status: tentative
+    icon: world
+
+    description: >
+      BDSA participates in the World Fair by hosting a Bangladesh-themed
+      table and, in some years, taking part in cultural performances.
+      The event provides an opportunity to share Bangladeshi culture
+      with the broader university community.
+
+    note: >
+      Participating organizations may receive recognition or prizes
+      based on community voting for booths and performances.
+
+  ####################################################################
+  # INTERNATIONAL MOTHER LANGUAGE DAY
+  ####################################################################
+
+  - title: International Mother Language Day
+    date: Around February 21
+    timing: Spring Semester
+    season: Spring
+    status: annual
+    icon: language
+
+    description: >
+      International Mother Language Day is one of BDSA's largest annual
+      programs. Co-hosted with Dhar India Studies, the event commemorates
+      the Bengali Language Movement and celebrates linguistic and cultural
+      diversity through cultural performances and community participation
+      on the Indiana University campus.
+
+  ####################################################################
+  # POHELA BOISHAKH + ELECTION
+  ####################################################################
+
+  - title: Pohela Boishakh Celebration & BDSA Election
+    date: Before Summer Break
+    timing: Late Spring Semester
+    season: Spring
+    status: annual
+    icon: boishakh
+
+    description: >
+      BDSA concludes the academic year's major events by celebrating
+      Pohela Boishakh, the Bengali New Year, with food, games, and
+      community activities. The annual BDSA Executive Committee election
+      is also held during this gathering to select the leadership team
+      for the next academic year.
