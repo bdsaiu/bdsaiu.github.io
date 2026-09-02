@@ -1,0 +1,324 @@
+/* =========================================================
+   BDSA Members Landing Page
+========================================================= */
+
+:root {
+    --iu-crimson: #990000;
+    --iu-crimson-dark: #7a0000;
+    --iu-crimson-light: #f5e8e8;
+
+    --dark: #111111;
+    --text: #444444;
+    --muted: #707070;
+
+    --bg: #f7f7f7;
+    --white: #ffffff;
+    --border: #e7e7e7;
+
+    --shadow: 0 14px 34px rgba(0, 0, 0, 0.08);
+    --shadow-hover: 0 22px 48px rgba(0, 0, 0, 0.13);
+}
+
+
+/* =========================================================
+   Page
+========================================================= */
+
+.members-page {
+    min-height: 100vh;
+    background: var(--bg);
+}
+
+.members-container {
+    width: min(1100px, 92%);
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   Hero
+========================================================= */
+
+.members-hero {
+    padding: 80px 0 58px;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(153, 0, 0, 0.055),
+            transparent 28%
+        ),
+        linear-gradient(
+            135deg,
+            #ffffff 0%,
+            #f2f2f2 100%
+        );
+
+    border-bottom: 1px solid var(--border);
+}
+
+.members-eyebrow {
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: var(--iu-crimson);
+
+    font-size: 0.76rem;
+    font-weight: 850;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+.members-hero h1 {
+    margin: 0;
+
+    color: var(--dark);
+
+    font-size: 3rem;
+    font-weight: 900;
+
+    line-height: 1.1;
+}
+
+.members-hero p {
+    max-width: 700px;
+
+    margin: 18px auto 0;
+
+    color: var(--muted);
+
+    font-size: 1.05rem;
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   Member Options
+========================================================= */
+
+.members-options {
+    padding: 70px 0 95px;
+}
+
+.member-option-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 32px;
+
+    align-items: stretch;
+}
+
+
+/* =========================================================
+   Option Card
+========================================================= */
+
+.member-option-card {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 310px;
+
+    padding: 42px 38px;
+
+    overflow: hidden;
+
+    border: 1px solid var(--border);
+    border-top: 6px solid var(--iu-crimson);
+
+    border-radius: 22px;
+
+    background: var(--white);
+
+    box-shadow: var(--shadow);
+
+    text-decoration: none;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.member-option-card::after {
+    content: "";
+
+    position: absolute;
+
+    width: 150px;
+    height: 150px;
+
+    top: -70px;
+    right: -70px;
+
+    border-radius: 50%;
+
+    background: rgba(153, 0, 0, 0.045);
+
+    transition: transform 0.3s ease;
+}
+
+.member-option-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow: var(--shadow-hover);
+
+    border-color: rgba(153, 0, 0, 0.22);
+
+    text-decoration: none;
+}
+
+.member-option-card:hover::after {
+    transform: scale(1.2);
+}
+
+
+/* =========================================================
+   Option Icon
+========================================================= */
+
+.option-icon {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 68px;
+    height: 68px;
+
+    margin-bottom: 24px;
+
+    border-radius: 18px;
+
+    background: var(--iu-crimson-light);
+
+    font-size: 1.85rem;
+}
+
+
+/* =========================================================
+   Option Text
+========================================================= */
+
+.member-option-card h2 {
+    margin: 0;
+
+    color: var(--dark);
+
+    font-size: 1.7rem;
+    font-weight: 900;
+
+    line-height: 1.25;
+}
+
+.member-option-card p {
+    margin: 15px 0 25px;
+
+    color: var(--muted);
+
+    font-size: 0.98rem;
+    line-height: 1.7;
+
+    flex: 1;
+}
+
+.option-link {
+    display: inline-flex;
+
+    align-items: center;
+
+    margin-top: auto;
+
+    color: var(--iu-crimson);
+
+    font-size: 0.94rem;
+    font-weight: 850;
+
+    transition: transform 0.2s ease;
+}
+
+.member-option-card:hover .option-link {
+    transform: translateX(4px);
+}
+
+
+/* =========================================================
+   Tablet
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .members-hero {
+        padding: 65px 0 50px;
+    }
+
+    .members-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .member-option-card {
+        padding: 35px 30px;
+    }
+
+}
+
+
+/* =========================================================
+   Mobile
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .members-container {
+        width: 92%;
+    }
+
+    .members-hero {
+        padding: 55px 0 42px;
+    }
+
+    .members-hero h1 {
+        font-size: 2.1rem;
+    }
+
+    .members-hero p {
+        font-size: 0.98rem;
+    }
+
+    .members-options {
+        padding: 45px 0 65px;
+    }
+
+    .member-option-grid {
+        grid-template-columns: 1fr;
+
+        gap: 22px;
+    }
+
+    .member-option-card {
+        min-height: auto;
+
+        padding: 30px 26px;
+    }
+
+    .member-option-card h2 {
+        font-size: 1.45rem;
+    }
+
+    .option-icon {
+        width: 58px;
+        height: 58px;
+
+        font-size: 1.55rem;
+    }
+
+}

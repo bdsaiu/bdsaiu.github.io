@@ -1,0 +1,527 @@
+/* =========================================================
+   BDSA Alumni Page
+========================================================= */
+
+:root {
+    --iu-crimson: #990000;
+    --iu-crimson-dark: #7a0000;
+    --iu-crimson-light: #f5e8e8;
+
+    --dark: #111111;
+    --text: #444444;
+    --muted: #737373;
+
+    --bg: #f7f7f7;
+    --white: #ffffff;
+    --border: #e7e7e7;
+
+    --shadow: 0 14px 34px rgba(0, 0, 0, 0.08);
+    --shadow-hover: 0 22px 48px rgba(0, 0, 0, 0.13);
+}
+
+
+/* =========================================================
+   Page
+========================================================= */
+
+.alumni-page {
+    min-height: 100vh;
+
+    background: var(--bg);
+}
+
+.alumni-container {
+    width: min(1200px, 92%);
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   Hero
+========================================================= */
+
+.alumni-hero {
+    padding: 60px 0 55px;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(153, 0, 0, 0.055),
+            transparent 28%
+        ),
+        linear-gradient(
+            135deg,
+            #ffffff 0%,
+            #f2f2f2 100%
+        );
+
+    border-bottom: 1px solid var(--border);
+}
+
+
+/* =========================================================
+   Back Link
+========================================================= */
+
+.back-link {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    margin-bottom: 24px;
+
+    color: var(--iu-crimson);
+
+    text-decoration: none;
+
+    font-size: 0.9rem;
+    font-weight: 800;
+
+    transition: transform 0.2s ease;
+}
+
+.back-link:hover {
+    color: var(--iu-crimson-dark);
+
+    transform: translateX(-3px);
+
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   Hero Text
+========================================================= */
+
+.alumni-eyebrow {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: var(--iu-crimson);
+
+    font-size: 0.75rem;
+    font-weight: 850;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+.alumni-hero h1 {
+    margin: 0;
+
+    color: var(--dark);
+
+    font-size: 3rem;
+    font-weight: 900;
+
+    line-height: 1.1;
+}
+
+.alumni-hero p {
+    max-width: 720px;
+
+    margin: 18px auto 0;
+
+    color: var(--muted);
+
+    font-size: 1.04rem;
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   Alumni Section
+========================================================= */
+
+.alumni-section {
+    padding: 65px 0 95px;
+}
+
+
+/* =========================================================
+   Alumni Grid
+========================================================= */
+
+.alumni-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 28px;
+
+    align-items: stretch;
+}
+
+
+/* =========================================================
+   Alumni Card
+========================================================= */
+
+.alumni-card {
+    display: flex;
+
+    flex-direction: column;
+
+    overflow: hidden;
+
+    border: 1px solid var(--border);
+    border-top: 6px solid var(--iu-crimson);
+
+    border-radius: 22px;
+
+    background: var(--white);
+
+    box-shadow: var(--shadow);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.alumni-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: var(--shadow-hover);
+
+    border-color: rgba(153, 0, 0, 0.2);
+}
+
+
+/* =========================================================
+   Alumni Photo
+========================================================= */
+
+.alumni-photo-wrap {
+    width: 150px;
+    height: 150px;
+
+    margin: 32px auto 20px;
+
+    padding: 5px;
+
+    overflow: hidden;
+
+    border-radius: 50%;
+
+    background: #f1dddd;
+
+    box-shadow:
+        0 0 0 1px rgba(153, 0, 0, 0.08);
+}
+
+.alumni-photo {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    transition: transform 0.35s ease;
+}
+
+.alumni-card:hover .alumni-photo {
+    transform: scale(1.05);
+}
+
+
+/* =========================================================
+   Alumni Information
+========================================================= */
+
+.alumni-info {
+    display: flex;
+
+    flex-direction: column;
+
+    flex: 1;
+
+    padding: 0 26px 30px;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   Graduation Badge
+========================================================= */
+
+.graduation-badge {
+    display: inline-block;
+
+    align-self: center;
+
+    margin-bottom: 13px;
+
+    padding: 6px 13px;
+
+    border-radius: 999px;
+
+    background: var(--iu-crimson-light);
+
+    color: var(--iu-crimson);
+
+    font-size: 0.72rem;
+    font-weight: 850;
+
+    letter-spacing: 0.3px;
+}
+
+
+/* =========================================================
+   Name
+========================================================= */
+
+.alumni-info h2 {
+    margin: 0;
+
+    color: var(--dark);
+
+    font-size: 1.35rem;
+    font-weight: 900;
+
+    line-height: 1.3;
+}
+
+
+/* =========================================================
+   Program
+========================================================= */
+
+.program {
+    margin: 10px 0 0;
+
+    color: #333333;
+
+    font-size: 0.94rem;
+    font-weight: 750;
+
+    line-height: 1.45;
+}
+
+
+/* =========================================================
+   School
+========================================================= */
+
+.school {
+    margin: 7px 0 18px;
+
+    color: var(--muted);
+
+    font-size: 0.86rem;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   Information Blocks
+========================================================= */
+
+.info-block {
+    margin-top: 15px;
+
+    padding-top: 15px;
+
+    border-top: 1px solid #eeeeee;
+}
+
+.info-label {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: var(--iu-crimson);
+
+    font-size: 0.69rem;
+    font-weight: 850;
+
+    letter-spacing: 0.7px;
+
+    text-transform: uppercase;
+}
+
+.info-block p {
+    margin: 0;
+
+    color: var(--text);
+
+    font-size: 0.87rem;
+    line-height: 1.55;
+}
+
+
+/* =========================================================
+   Buttons
+========================================================= */
+
+.alumni-links {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    flex-wrap: wrap;
+
+    margin-top: auto;
+
+    padding-top: 24px;
+}
+
+.alumni-button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 9px 15px;
+
+    border: 1.5px solid var(--iu-crimson);
+
+    border-radius: 999px;
+
+    background: var(--iu-crimson);
+
+    color: var(--white);
+
+    text-decoration: none;
+
+    font-size: 0.79rem;
+    font-weight: 800;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.alumni-button:hover {
+    background: var(--iu-crimson-dark);
+
+    border-color: var(--iu-crimson-dark);
+
+    color: var(--white);
+
+    transform: translateY(-2px);
+
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   Secondary Button
+========================================================= */
+
+.alumni-button.secondary {
+    background: var(--white);
+
+    color: var(--iu-crimson);
+}
+
+.alumni-button.secondary:hover {
+    background: var(--iu-crimson);
+
+    color: var(--white);
+
+    border-color: var(--iu-crimson);
+}
+
+
+/* =========================================================
+   Tablet
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .alumni-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .alumni-hero h1 {
+        font-size: 2.6rem;
+    }
+
+}
+
+
+/* =========================================================
+   Mobile
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .alumni-container {
+        width: 92%;
+    }
+
+    .alumni-hero {
+        padding: 50px 0 42px;
+    }
+
+    .alumni-hero h1 {
+        font-size: 2.15rem;
+    }
+
+    .alumni-hero p {
+        font-size: 0.97rem;
+    }
+
+    .alumni-section {
+        padding: 45px 0 65px;
+    }
+
+    .alumni-grid {
+        grid-template-columns: 1fr;
+
+        gap: 22px;
+    }
+
+    .alumni-card {
+        border-radius: 19px;
+    }
+
+    .alumni-photo-wrap {
+        width: 135px;
+        height: 135px;
+
+        margin-top: 28px;
+    }
+
+    .alumni-info {
+        padding: 0 22px 27px;
+    }
+
+    .alumni-info h2 {
+        font-size: 1.3rem;
+    }
+
+}
+
+
+/* =========================================================
+   Very Small Screens
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .alumni-links {
+        flex-direction: column;
+    }
+
+    .alumni-button {
+        width: 100%;
+    }
+
+}

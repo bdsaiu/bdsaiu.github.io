@@ -1,0 +1,138 @@
+---
+layout: default
+---
+
+<link rel="stylesheet"
+      href="{{ '/assets/css/alumni.css' | relative_url }}">
+
+<main class="alumni-page">
+
+  <section class="alumni-hero">
+    <div class="alumni-container">
+
+      <a href="{{ '/members/' | relative_url }}"
+         class="back-link">
+        ← Members
+      </a>
+
+      <span class="alumni-eyebrow">
+        BDSA COMMUNITY
+      </span>
+
+      <h1>Alumni</h1>
+
+      <p>
+        Celebrating members of the BDSA community and their
+        academic and professional journeys beyond
+        Indiana University Bloomington.
+      </p>
+
+    </div>
+  </section>
+
+  <section class="alumni-section">
+    <div class="alumni-container">
+
+      <div class="alumni-grid">
+
+        {% for member in site.data.members.alumni %}
+
+        <article class="alumni-card">
+
+          <div class="alumni-photo-wrap">
+
+            {% if member.photo and member.photo != "" %}
+
+            <img
+              src="{{ '/assets/images/members/alumni/' | append: member.photo | relative_url }}"
+              alt="{{ member.name }}"
+              class="alumni-photo">
+
+            {% else %}
+
+            <div class="alumni-placeholder">
+              👤
+            </div>
+
+            {% endif %}
+
+          </div>
+
+          <div class="alumni-info">
+
+            {% if member.graduation_year and member.graduation_year != "" %}
+            <span class="graduation-badge">
+              Class of {{ member.graduation_year }}
+            </span>
+            {% endif %}
+
+            <h2>{{ member.name }}</h2>
+
+            {% if member.program and member.program != "" %}
+            <p class="program">
+              {{ member.program }}
+            </p>
+            {% endif %}
+
+            {% if member.school and member.school != "" %}
+            <p class="school">
+              {{ member.school }}
+            </p>
+            {% endif %}
+
+            {% if member.current_affiliation and member.current_affiliation != "" %}
+            <div class="info-block">
+              <span class="info-label">
+                Current Affiliation
+              </span>
+
+              <p>
+                {{ member.current_affiliation }}
+              </p>
+            </div>
+            {% endif %}
+
+            {% if member.research_interest and member.research_interest != "" %}
+            <div class="info-block">
+              <span class="info-label">
+                Research Interests
+              </span>
+
+              <p>
+                {{ member.research_interest }}
+              </p>
+            </div>
+            {% endif %}
+
+            <div class="alumni-links">
+
+              {% if member.email and member.email != "" %}
+              <a href="mailto:{{ member.email }}"
+                 class="alumni-button">
+                ✉ Email
+              </a>
+              {% endif %}
+
+              {% if member.website and member.website != "" %}
+              <a href="{{ member.website }}"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="alumni-button secondary">
+                🌐 Website / LinkedIn
+              </a>
+              {% endif %}
+
+            </div>
+
+          </div>
+
+        </article>
+
+        {% endfor %}
+
+      </div>
+
+    </div>
+  </section>
+
+</main>
