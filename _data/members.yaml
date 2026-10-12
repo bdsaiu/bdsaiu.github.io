@@ -150,18 +150,6 @@ current:
     website: ""
     photo: ""
 
-  - name: "Ruhun Wasata"
-    affiliation: "PhD in Health Behavior"
-    email: "rwasata@iu.edu"
-    website: ""
-    photo: ""
-
-  - name: "Muhiminul Maruf"
-    affiliation: "Full-Time MBA"
-    email: "mumaruf@iu.edu"
-    website: ""
-    photo: ""
-
   - name: "Md Mahamudul Hasan Rumom"
     affiliation: "PhD in Chemistry"
     email: "mhrumon.ku@gmail.com"
@@ -180,12 +168,6 @@ current:
     website: ""
     photo: ""
 
-  - name: "Sabid Bin Habib Pias"
-    affiliation: "PhD in Computer Science"
-    email: "sabhabib@iu.edu"
-    website: ""
-    photo: ""
-
   - name: "D M Zunayed Kamal Nibie"
     affiliation: "PhD in Mathematics"
     email: "zunaidfccbd@gmail.com"
@@ -201,12 +183,6 @@ current:
   - name: "Shobnom Mustaree"
     affiliation: "Microbiology"
     email: "smustare@iu.edu"
-    website: ""
-    photo: ""
-
-  - name: "Sharif Wahab"
-    affiliation: "Geography"
-    email: "sharif.waly@gmail.com"
     website: ""
     photo: ""
 
@@ -234,21 +210,9 @@ current:
     website: ""
     photo: ""
 
-  - name: "Arpita Bala"
-    affiliation: "Master of Public Health (MPH), Bachelor of Arts"
-    email: "abala@iu.edu"
-    website: ""
-    photo: ""
-
   - name: "Tanjina Milee"
     affiliation: "PhD in Folklore Studies"
     email: "tmilee@iu.edu"
-    website: ""
-    photo: ""
-
-  - name: "Niger Sultana"
-    affiliation: "Folklore and Ethnomusicology"
-    email: "nisultan@iu.edu"
     website: ""
     photo: ""
 
