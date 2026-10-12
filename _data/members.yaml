@@ -129,3 +129,203 @@ alumni:
     research_interest: "Refugee & Engineering Education"
     photo: "shukufe-rahman.jpg"
     website: "https://www.linkedin.com/in/shukuferahman"
+
+# ======================================================================
+# Current members (shown alphabetically on /members/current/)
+#   photo:   file name in assets/images/members/current/ (leave "" for initials)
+#   website: personal page, LinkedIn, etc. (optional)
+# ======================================================================
+
+current:
+
+  - name: "Md. Al-Masrur Khan"
+    affiliation: "PhD in Intelligent Systems Engineering"
+    email: "khanmdal@iu.edu"
+    website: "https://masrur02.github.io/"
+    photo: "Masrur.jpg"
+
+  - name: "Mahfujur Rahman Himel"
+    affiliation: "PhD in Health Behavior"
+    email: "mahimel@iu.edu"
+    website: ""
+    photo: ""
+
+  - name: "Ruhun Wasata"
+    affiliation: "PhD in Health Behavior"
+    email: "rwasata@iu.edu"
+    website: ""
+    photo: ""
+
+  - name: "Muhiminul Maruf"
+    affiliation: "Full-Time MBA"
+    email: "mumaruf@iu.edu"
+    website: ""
+    photo: ""
+
+  - name: "Md Mahamudul Hasan Rumom"
+    affiliation: "PhD in Chemistry"
+    email: "mhrumon.ku@gmail.com"
+    website: ""
+    photo: ""
+
+  - name: "Niloy Deb Roy"
+    affiliation: "PhD in Computer Science"
+    email: "niloymishu@gmail.com"
+    website: ""
+    photo: ""
+
+  - name: "Touhidul Islam"
+    affiliation: "Folklore Studies"
+    email: "toisla@iu.edu"
+    website: ""
+    photo: ""
+
+  - name: "Sabid Bin Habib Pias"
+    affiliation: "PhD in Computer Science"
+    email: "sabhabib@iu.edu"
+    website: ""
+    photo: ""
+
+  - name: "D M Zunayed Kamal Nibie"
+    affiliation: "PhD in Mathematics"
+    email: "zunaidfccbd@gmail.com"
+    website: ""
+    photo: ""
+
+  - name: "Nilambar Halder Tonmoy"
+    affiliation: "Computer Science"
+    email: "nhaldert@iu.edu"
+    website: ""
+    photo: ""
+
+  - name: "Shobnom Mustaree"
+    affiliation: "Microbiology"
+    email: "smustare@iu.edu"
+    website: ""
+    photo: ""
+
+  - name: "Sharif Wahab"
+    affiliation: "Geography"
+    email: "sharif.waly@gmail.com"
+    website: ""
+    photo: ""
+
+  - name: "Sabila Nawshin"
+    affiliation: "PhD in Computer Science"
+    email: "sabilanawshin3@gmail.com"
+    website: ""
+    photo: ""
+
+  - name: "Athkia Subat"
+    affiliation: "Information Science"
+    email: "asubat@iu.edu"
+    website: ""
+    photo: ""
+
+  - name: "Md Ariful Islam"
+    affiliation: "Earth and Atmospheric Sciences"
+    email: "mdaislam@iu.edu"
+    website: ""
+    photo: ""
+
+  - name: "Md Rysul Kabir"
+    affiliation: "PhD in Computer Science"
+    email: "mdrkabir@iu.edu"
+    website: ""
+    photo: ""
+
+  - name: "Arpita Bala"
+    affiliation: "Master of Public Health (MPH), Bachelor of Arts"
+    email: "abala@iu.edu"
+    website: ""
+    photo: ""
+
+  - name: "Tanjina Milee"
+    affiliation: "PhD in Folklore Studies"
+    email: "tmilee@iu.edu"
+    website: ""
+    photo: ""
+
+  - name: "Niger Sultana"
+    affiliation: "Folklore and Ethnomusicology"
+    email: "nisultan@iu.edu"
+    website: ""
+    photo: ""
+
+  - name: "Rodoshie Reheean"
+    affiliation: "PhD in Computer Science"
+    email: "rreheean@iu.edu"
+    website: ""
+    photo: ""
+
+  - name: "Farhan Ishraqqul Islam"
+    affiliation: "PhD in Economics"
+    email: "farhanratul94@gmail.com"
+    website: ""
+    photo: ""
+
+  - name: "Sandip Sarker"
+    affiliation: "Master of Public Affairs (MPA)"
+    email: "sandip0735@gmail.com"
+    website: ""
+    photo: ""
+
+  - name: "Mst Shohely Akter"
+    affiliation: "PhD in Curriculum and Instruction (Science Education)"
+    email: "shoakte@iu.edu"
+    website: ""
+    photo: ""
+
+  - name: "Fatema Akter Mahua"
+    affiliation: "PhD in Environmental Health"
+    email: "fmahua@iu.edu"
+    website: ""
+    photo: ""
+
+  - name: "Naziba Nusrat"
+    affiliation: "PhD in Environmental Health"
+    email: "nnusrat@iu.edu"
+    website: ""
+    photo: ""
+
+  - name: "Asma Binte Afzal"
+    affiliation: "PhD in Environmental Health"
+    email: "asbafzal@iu.edu"
+    website: ""
+    photo: ""
+
+  - name: "Arif Ahmed"
+    affiliation: ""
+    email: "ariahmed@iu.edu"
+    website: ""
+    photo: ""
+
+  - name: "Neil M. Nahian"
+    affiliation: ""
+    email: "smnislam@iu.edu"
+    website: ""
+    photo: ""
+
+  - name: "Azmin Azran"
+    affiliation: ""
+    email: "aazran@iu.edu"
+    website: ""
+    photo: ""
+
+  - name: "Nahid Hasan Sagar"
+    affiliation: ""
+    email: "nsagar@iu.edu"
+    website: ""
+    photo: ""
+
+  - name: "Raya Wali"
+    affiliation: ""
+    email: ""
+    website: ""
+    photo: ""
+
+  - name: "Nazia Masood"
+    affiliation: ""
+    email: ""
+    website: ""
+    photo: ""

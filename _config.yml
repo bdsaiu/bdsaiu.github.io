@@ -45,6 +45,7 @@ exclude:
   - vendor/
   - tools/
   - assets/images/BDSAFallPicnic2026/
+  - assets/*.docx
 
 # Plugins (previously gems:)
 plugins:
