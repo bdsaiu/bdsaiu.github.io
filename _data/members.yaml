@@ -130,6 +130,16 @@ alumni:
     photo: "shukufe-rahman.jpg"
     website: "https://www.linkedin.com/in/shukuferahman"
 
+  - name: "Nazia Masood"
+    email: "nazia.masood@bracu.ac.bd"
+    program: "Fulbright Foreign Language Teaching Assistant (FLTA)"
+    school: ""
+    graduation_year: "2025"
+    current_affiliation: ""
+    research_interest: ""
+    photo: "Nazia-Masood.jpg"
+    website: ""
+
 # ======================================================================
 # Current members (shown alphabetically on /members/current/)
 #   photo:   file name in assets/images/members/current/ (leave "" for initials)
@@ -168,7 +178,7 @@ current:
     website: ""
     photo: ""
 
-  - name: "D M Zunayed Kamal Nibie"
+  - name: "D M Zunayed Kamal Nibir"
     affiliation: "PhD Student in Mathematics"
     email: "zunaidfccbd@gmail.com"
     website: ""
@@ -258,12 +268,6 @@ current:
     website: ""
     photo: ""
 
-  - name: "Arif Ahmed"
-    affiliation: ""
-    email: "ariahmed@iu.edu"
-    website: ""
-    photo: ""
-
   - name: "Neil M. Nahian"
     affiliation: ""
     email: "smnislam@iu.edu"
@@ -288,8 +292,3 @@ current:
     website: ""
     photo: ""
 
-  - name: "Nazia Masood"
-    affiliation: ""
-    email: ""
-    website: ""
-    photo: ""
