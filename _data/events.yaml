@@ -6,14 +6,14 @@ subtitle: >
   Bloomington together throughout the academic year.
 
 upcoming:
-  title: BDSA Call-Out Meeting
-  date: September 6, 2026
+  title: World Fair
+  date: December 2026 (date to be announced)
   season: Fall 2026
   description: >
-    Join us for BDSA's annual Call-Out Meeting. The Executive Committee
-    will introduce the organization, explain what BDSA does, share
-    opportunities for students to get involved, and present our plans
-    and activities for the academic year.
+    BDSA will take part in Indiana University's World Fair with a
+    Bangladesh-themed table, sharing Bangladeshi culture, food, and
+    traditions with the broader university community. Stay tuned for
+    the exact date and ways to get involved.
 
 events:
 
@@ -47,7 +47,7 @@ events:
     date: September 6, 2026
     timing: Early September
     season: Fall
-    status: upcoming
+    status: completed
     icon: meeting
 
     description: >
@@ -62,11 +62,12 @@ events:
   ####################################################################
 
   - title: BDSA Fall Picnic
-    date: Late September – Early October
+    date: October 11, 2026
     timing: Fall Semester
     season: Fall
-    status: tentative
+    status: completed
     icon: picnic
+    gallery: bdsa-fall-picnic-2026
 
     description: >
       BDSA's Fall Picnic is organized each year to welcome incoming
@@ -80,10 +81,10 @@ events:
   ####################################################################
 
   - title: World Fair
-    date: December
+    date: December 2026
     timing: Late Fall Semester
     season: Fall
-    status: tentative
+    status: upcoming
     icon: world
 
     description: >

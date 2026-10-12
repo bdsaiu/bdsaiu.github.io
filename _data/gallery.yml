@@ -1,0 +1,40 @@
+title: Gallery
+
+subtitle: >
+  Moments from BDSA gatherings, cultural celebrations, and community
+  events at Indiana University Bloomington.
+
+# ======================================================================
+# Albums (newest first)
+#
+# To add an event:
+#   1. python3 tools/prepare_album.py <folder with the original photos> <slug>
+#      (writes web-sized copies to assets/images/gallery/<slug>/full and /thumb;
+#      keep the original folder out of git, see .gitignore)
+#   2. Add an entry below. Every photo in the album folder is shown in the grid;
+#      "highlights" (file names in the album folder) are shown in the slideshow.
+# ======================================================================
+
+albums:
+
+  - slug: bdsa-fall-picnic-2026
+    title: BDSA Fall Picnic 2026
+    date: October 11, 2026
+    season: Fall 2026
+    description: >
+      Our annual Fall Picnic brought together new and returning students,
+      families, and friends from the Bangladeshi community for an afternoon
+      of food, games, prizes, and autumn colors by the lake.
+    highlights:
+      - img_6748.jpg
+      - 2cb2387561d8f6091551be276976e06c.jpg
+      - img_6651.jpg
+      - img_6684.jpg
+      - img_6765.jpg
+      - bb917c15d773a17c47a61782abbe5f2e.jpg
+      - img_6640.jpg
+      - img_6805.jpg
+      - img_6733.jpg
+      - img_6826.jpg
+      - img_6659.jpg
+      - img_6690.jpg

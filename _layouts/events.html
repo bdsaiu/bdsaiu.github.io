@@ -32,7 +32,7 @@ Hero
 Next Event
 ======================================================= -->
 
-<section class="events-section">
+<section class="events-section" id="next-event">
 
   <div class="events-container">
 
@@ -237,6 +237,20 @@ Annual Event Calendar
             </p>
 
           </div>
+
+          {% endif %}
+
+
+          {% if event.gallery %}
+
+          <a
+            href="{{ '/gallery/' | relative_url }}#{{ event.gallery }}"
+            class="event-gallery-link">
+
+            📸 View Photos
+            <span>→</span>
+
+          </a>
 
           {% endif %}
 

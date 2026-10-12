@@ -1,0 +1,673 @@
+/* =========================================================
+   BDSA Gallery Page
+========================================================= */
+
+:root {
+    --iu-crimson: #990000;
+    --iu-crimson-dark: #7a0000;
+    --iu-crimson-light: #f5eaea;
+
+    --dark: #111111;
+    --text: #3f3f3f;
+    --muted: #707070;
+
+    --bg: #f7f7f7;
+    --white: #ffffff;
+    --border: #e8e8e8;
+
+    --shadow: 0 14px 34px rgba(0, 0, 0, 0.08);
+    --shadow-hover: 0 22px 48px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================================
+   Page
+========================================================= */
+
+.gallery-page {
+    min-height: 100vh;
+    background: var(--bg);
+    padding-bottom: 70px;
+}
+
+.gallery-container {
+    width: min(1180px, 92%);
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   Hero
+========================================================= */
+
+.gallery-hero {
+    padding: 82px 0 62px;
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(153, 0, 0, 0.06),
+            transparent 28%
+        ),
+        linear-gradient(
+            135deg,
+            #ffffff 0%,
+            #f3f3f3 100%
+        );
+
+    border-bottom: 1px solid var(--border);
+}
+
+.hero-eyebrow {
+    display: block;
+
+    margin-bottom: 14px;
+
+    color: var(--iu-crimson);
+
+    font-size: 0.78rem;
+    font-weight: 850;
+
+    letter-spacing: 2.2px;
+}
+
+.gallery-hero h1 {
+    margin: 0;
+
+    color: var(--dark);
+
+    font-size: 3.2rem;
+    font-weight: 900;
+    line-height: 1.08;
+}
+
+.gallery-hero p {
+    max-width: 760px;
+    margin: 20px auto 0;
+
+    color: var(--muted);
+
+    font-size: 1.08rem;
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   Album Section
+========================================================= */
+
+.album-section {
+    padding: 56px 0 30px;
+
+    scroll-margin-top: 70px;
+}
+
+.album-header {
+    display: flex;
+
+    align-items: flex-end;
+    justify-content: space-between;
+
+    gap: 24px;
+
+    margin-bottom: 28px;
+}
+
+.section-label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: var(--iu-crimson);
+
+    font-size: 0.75rem;
+    font-weight: 850;
+
+    letter-spacing: 1.7px;
+}
+
+.section-heading {
+    margin: 0;
+
+    color: var(--dark);
+
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 1.2;
+}
+
+.section-description {
+    max-width: 760px;
+
+    margin: 13px 0 0;
+
+    color: var(--muted);
+
+    font-size: 0.98rem;
+    line-height: 1.7;
+}
+
+.photo-count {
+    flex: 0 0 auto;
+
+    padding: 8px 16px;
+
+    border: 1px solid #e8caca;
+    border-radius: 999px;
+
+    background: #f4e3e3;
+
+    color: var(--iu-crimson);
+
+    font-size: 0.8rem;
+    font-weight: 850;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* =========================================================
+   Slideshow
+========================================================= */
+
+.album-slider {
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 24px;
+
+    background: #1a1a1a;
+
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+}
+
+.slider-track {
+    position: relative;
+
+    aspect-ratio: 16 / 9;
+}
+
+.slider-slide {
+    position: absolute;
+    inset: 0;
+
+    margin: 0;
+
+    opacity: 0;
+
+    transition: opacity 0.8s ease;
+}
+
+.slider-slide.active {
+    opacity: 1;
+}
+
+/* blurred copy fills the frame behind portrait photos */
+.slide-backdrop {
+    position: absolute;
+    inset: -30px;
+
+    background-size: cover;
+    background-position: center;
+
+    filter: blur(26px) brightness(0.6);
+}
+
+.slider-slide img {
+    position: relative;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 3;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 50px;
+    height: 50px;
+
+    padding: 0;
+
+    transform: translateY(-50%);
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.85);
+
+    color: var(--iu-crimson);
+
+    font-size: 1.1rem;
+
+    cursor: pointer;
+
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease;
+}
+
+.slider-arrow:hover {
+    background: var(--iu-crimson);
+
+    color: var(--white);
+}
+
+.slider-prev {
+    left: 20px;
+}
+
+.slider-next {
+    right: 20px;
+}
+
+.slider-counter {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    z-index: 3;
+
+    padding: 6px 13px;
+
+    border-radius: 999px;
+
+    background: rgba(0, 0, 0, 0.55);
+
+    color: var(--white);
+
+    font-size: 0.78rem;
+    font-weight: 800;
+
+    letter-spacing: 0.5px;
+}
+
+.slider-dots {
+    position: absolute;
+    left: 50%;
+    bottom: 18px;
+    z-index: 3;
+
+    display: flex;
+
+    gap: 8px;
+
+    transform: translateX(-50%);
+}
+
+.slider-dot {
+    width: 10px;
+    height: 10px;
+
+    padding: 0;
+
+    border: none;
+    border-radius: 999px;
+
+    background: rgba(255, 255, 255, 0.55);
+
+    cursor: pointer;
+
+    transition:
+        width 0.3s ease,
+        background 0.3s ease;
+}
+
+.slider-dot.active {
+    width: 28px;
+
+    background: var(--white);
+}
+
+
+/* =========================================================
+   Photo Grid
+========================================================= */
+
+.album-grid-header {
+    display: flex;
+
+    align-items: baseline;
+    justify-content: space-between;
+
+    gap: 12px;
+
+    margin: 46px 0 18px;
+}
+
+.album-grid-header h3 {
+    margin: 0;
+
+    color: var(--dark);
+
+    font-size: 1.4rem;
+    font-weight: 900;
+}
+
+.album-grid-header span {
+    color: var(--muted);
+
+    font-size: 0.85rem;
+}
+
+.album-grid {
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 12px;
+}
+
+.grid-item {
+    position: relative;
+
+    display: block;
+
+    overflow: hidden;
+
+    aspect-ratio: 1 / 1;
+
+    border-radius: 14px;
+
+    background: #e6e6e6;
+
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+}
+
+.grid-item.is-hidden {
+    display: none;
+}
+
+.grid-item img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.4s ease;
+}
+
+.grid-item::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: rgba(153, 0, 0, 0);
+
+    transition: background 0.3s ease;
+}
+
+.grid-item:hover img {
+    transform: scale(1.06);
+}
+
+.grid-item:hover::after {
+    background: rgba(153, 0, 0, 0.15);
+}
+
+.album-more {
+    margin-top: 28px;
+
+    text-align: center;
+}
+
+.show-more-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    padding: 12px 26px;
+
+    border: 2px solid var(--iu-crimson);
+    border-radius: 999px;
+
+    background: var(--iu-crimson);
+
+    color: var(--white);
+
+    font-size: 0.9rem;
+    font-weight: 800;
+
+    cursor: pointer;
+
+    transition:
+        background 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.show-more-button:hover {
+    background: var(--iu-crimson-dark);
+
+    border-color: var(--iu-crimson-dark);
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   Lightbox
+========================================================= */
+
+.lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(10, 10, 10, 0.94);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+        opacity 0.3s ease,
+        visibility 0.3s ease;
+}
+
+.lightbox.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.lightbox-image {
+    max-width: 88vw;
+    max-height: 86vh;
+
+    border-radius: 10px;
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 18px;
+    right: 24px;
+
+    padding: 0;
+
+    border: none;
+
+    background: none;
+
+    color: var(--white);
+
+    font-size: 2.6rem;
+    line-height: 1;
+
+    cursor: pointer;
+
+    opacity: 0.85;
+}
+
+.lightbox-close:hover {
+    opacity: 1;
+}
+
+.lightbox-arrow {
+    position: absolute;
+    top: 50%;
+
+    width: 54px;
+    height: 54px;
+
+    padding: 0;
+
+    transform: translateY(-50%);
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    color: var(--white);
+
+    font-size: 1.2rem;
+
+    cursor: pointer;
+
+    transition: background 0.25s ease;
+}
+
+.lightbox-arrow:hover {
+    background: var(--iu-crimson);
+}
+
+.lightbox-prev {
+    left: 22px;
+}
+
+.lightbox-next {
+    right: 22px;
+}
+
+.lightbox-counter {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    color: rgba(255, 255, 255, 0.8);
+
+    font-size: 0.85rem;
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* =========================================================
+   Tablet
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .gallery-hero h1 {
+        font-size: 2.6rem;
+    }
+
+    .album-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .album-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+}
+
+
+/* =========================================================
+   Mobile
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .gallery-hero {
+        padding: 58px 0 44px;
+    }
+
+    .gallery-hero h1 {
+        font-size: 2.1rem;
+    }
+
+    .section-heading {
+        font-size: 1.6rem;
+    }
+
+    .slider-track {
+        aspect-ratio: 4 / 3;
+    }
+
+    .album-slider {
+        border-radius: 18px;
+    }
+
+    .slider-arrow {
+        width: 38px;
+        height: 38px;
+
+        font-size: 0.9rem;
+    }
+
+    .slider-prev {
+        left: 10px;
+    }
+
+    .slider-next {
+        right: 10px;
+    }
+
+    .album-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 8px;
+    }
+
+    .album-grid-header {
+        flex-direction: column;
+
+        gap: 4px;
+    }
+
+    .lightbox-arrow {
+        width: 42px;
+        height: 42px;
+    }
+
+    .lightbox-prev {
+        left: 8px;
+    }
+
+    .lightbox-next {
+        right: 8px;
+    }
+
+    .lightbox-image {
+        max-width: 96vw;
+    }
+}

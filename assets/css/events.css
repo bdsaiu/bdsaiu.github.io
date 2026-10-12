@@ -102,6 +102,10 @@
     padding: 48px 0;
 }
 
+#next-event {
+    scroll-margin-top: 70px;
+}
+
 .section-header {
     margin-bottom: 26px;
 }
@@ -608,6 +612,47 @@
 
     font-size: 0.87rem;
     line-height: 1.6;
+}
+
+
+/* =========================================================
+   Event Photos Link
+========================================================= */
+
+.event-gallery-link {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: 18px;
+
+    padding: 9px 18px;
+
+    border: 2px solid var(--iu-crimson);
+
+    border-radius: 999px;
+
+    color: var(--iu-crimson);
+
+    text-decoration: none;
+
+    font-size: 0.85rem;
+    font-weight: 800;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.event-gallery-link:hover {
+    background: var(--iu-crimson);
+
+    color: var(--white);
+
+    transform: translateY(-2px);
 }
 
 

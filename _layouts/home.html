@@ -86,15 +86,9 @@ layout: default
 
         <div class="hero-buttons">
 
-            <a href="{{ '/join/' | relative_url }}" class="btn-primary">
+            <a href="{{ '/events/' | relative_url }}#next-event" class="btn-primary">
 
-                Join Us
-
-            </a>
-
-            <a href="{{ '/events/' | relative_url }}" class="btn-secondary">
-
-                Upcoming Events
+                Upcoming Event: {{ site.data.events.upcoming.title }} →
 
             </a>
 
@@ -172,13 +166,6 @@ layout: default
                     community service, and lifelong friendships.
 
                 </p>
-
-                <a href="{{ '/about/' | relative_url }}"
-                   class="btn-primary">
-
-                    Learn More
-
-                </a>
 
             </div>
 

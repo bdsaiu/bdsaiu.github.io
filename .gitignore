@@ -2,3 +2,5 @@ _site
 .sass-cache
 .jekyll-metadata
 Gemfile.lock
+# Original full-size event photos/videos (only the web copies in assets/images/gallery/ are published)
+assets/images/BDSAFallPicnic2026/

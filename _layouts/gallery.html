@@ -1,0 +1,200 @@
+---
+layout: default
+---
+
+<link rel="stylesheet"
+href="{{ '/assets/css/gallery.css' | relative_url }}">
+
+<main class="gallery-page">
+
+<!-- =======================================================
+Hero
+======================================================= -->
+
+<section class="gallery-hero">
+
+  <div class="gallery-container">
+
+    <span class="hero-eyebrow">BDSA AT IU BLOOMINGTON</span>
+
+    <h1>{{ site.data.gallery.title }}</h1>
+
+    <p>
+      {{ site.data.gallery.subtitle }}
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- =======================================================
+Albums
+======================================================= -->
+
+{% for album in site.data.gallery.albums %}
+
+{% assign folder = "/assets/images/gallery/" | append: album.slug %}
+{% assign thumb_prefix = folder | append: "/thumb/" %}
+{% assign photos = site.static_files | where_exp: "f", "f.path contains thumb_prefix" | sort: "name" %}
+
+<section class="album-section" id="{{ album.slug }}">
+
+  <div class="gallery-container">
+
+    <div class="album-header">
+
+      <div>
+
+        <span class="section-label">
+          {{ album.season | upcase }} · {{ album.date | upcase }}
+        </span>
+
+        <h2 class="section-heading">
+          {{ album.title }}
+        </h2>
+
+        <p class="section-description">
+          {{ album.description }}
+        </p>
+
+      </div>
+
+      <span class="photo-count">
+        📸 {{ photos.size }} Photos
+      </span>
+
+    </div>
+
+
+    <!-- ===================== Slideshow ===================== -->
+
+    {% if album.highlights %}
+
+    <div class="album-slider" data-autoplay="5000">
+
+      <div class="slider-track">
+
+        {% for name in album.highlights %}
+
+        <figure class="slider-slide{% if forloop.first %} active{% endif %}">
+
+          <div
+            class="slide-backdrop"
+            style="background-image: url('{{ folder | append: '/thumb/' | append: name | relative_url }}');">
+          </div>
+
+          <img
+            src="{{ folder | append: '/full/' | append: name | relative_url }}"
+            alt="{{ album.title }} photo {{ forloop.index }}"
+            {% unless forloop.first %}loading="lazy"{% endunless %}>
+
+        </figure>
+
+        {% endfor %}
+
+      </div>
+
+      <button class="slider-arrow slider-prev" aria-label="Previous photo">
+        &#10094;
+      </button>
+
+      <button class="slider-arrow slider-next" aria-label="Next photo">
+        &#10095;
+      </button>
+
+      <div class="slider-counter">
+        <span class="slider-current">1</span> / {{ album.highlights.size }}
+      </div>
+
+      <div class="slider-dots">
+
+        {% for name in album.highlights %}
+        <button
+          class="slider-dot{% if forloop.first %} active{% endif %}"
+          aria-label="Show photo {{ forloop.index }}">
+        </button>
+        {% endfor %}
+
+      </div>
+
+    </div>
+
+    {% endif %}
+
+
+    <!-- ===================== All Photos ===================== -->
+
+    <div class="album-grid-header">
+
+      <h3>All Photos</h3>
+
+      <span>Click a photo to view it full size</span>
+
+    </div>
+
+    <div class="album-grid">
+
+      {% for photo in photos %}
+
+      <a
+        href="{{ folder | append: '/full/' | append: photo.name | relative_url }}"
+        class="grid-item{% if forloop.index > 20 %} is-hidden{% endif %}"
+        data-index="{{ forloop.index0 }}">
+
+        <img
+          src="{{ photo.path | relative_url }}"
+          alt="{{ album.title }} photo {{ forloop.index }}"
+          loading="lazy">
+
+      </a>
+
+      {% endfor %}
+
+    </div>
+
+    {% if photos.size > 20 %}
+
+    <div class="album-more">
+
+      <button class="show-more-button">
+        Show All {{ photos.size }} Photos
+        <span>↓</span>
+      </button>
+
+    </div>
+
+    {% endif %}
+
+  </div>
+
+</section>
+
+{% endfor %}
+
+</main>
+
+
+<!-- =======================================================
+Lightbox
+======================================================= -->
+
+<div class="lightbox" aria-hidden="true">
+
+  <button class="lightbox-close" aria-label="Close">&times;</button>
+
+  <button class="lightbox-arrow lightbox-prev" aria-label="Previous photo">
+    &#10094;
+  </button>
+
+  <img class="lightbox-image" src="" alt="">
+
+  <button class="lightbox-arrow lightbox-next" aria-label="Next photo">
+    &#10095;
+  </button>
+
+  <div class="lightbox-counter"></div>
+
+</div>
+
+<script src="{{ '/assets/js/gallery.js' | relative_url }}"></script>
