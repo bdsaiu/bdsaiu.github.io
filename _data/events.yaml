@@ -8,7 +8,7 @@ subtitle: >
 upcoming:
   title: World Fair
   date: December 2026 (date to be announced)
-  season: Fall 2026
+  season: Winter 2026
   description: >
     BDSA will take part in Indiana University's World Fair with a
     Bangladesh-themed table, sharing Bangladeshi culture, food, and
@@ -83,7 +83,7 @@ events:
   - title: World Fair
     date: December 2026
     timing: Late Fall Semester
-    season: Fall
+    season: Winter
     status: upcoming
     icon: world
 
