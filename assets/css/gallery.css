@@ -94,13 +94,126 @@
 
 
 /* =========================================================
+   Program Navigation
+========================================================= */
+
+.program-nav {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+
+    padding: 14px 0;
+
+    background: rgba(255, 255, 255, 0.94);
+
+    border-bottom: 1px solid var(--border);
+
+    backdrop-filter: blur(8px);
+}
+
+.program-nav .gallery-container {
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 10px;
+}
+
+.program-chip,
+.year-chip {
+    display: inline-block;
+
+    padding: 8px 18px;
+
+    border: 1px solid #e8caca;
+    border-radius: 999px;
+
+    background: var(--white);
+
+    color: var(--iu-crimson);
+
+    font-size: 0.85rem;
+    font-weight: 800;
+
+    text-decoration: none;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease;
+}
+
+.program-chip:hover,
+.year-chip:hover {
+    background: var(--iu-crimson);
+
+    color: var(--white);
+}
+
+
+/* =========================================================
+   Program Section
+========================================================= */
+
+.program-section {
+    padding: 64px 0 20px;
+
+    border-bottom: 1px solid var(--border);
+
+    scroll-margin-top: 70px;
+}
+
+.program-section:nth-of-type(even) {
+    background: var(--white);
+}
+
+.program-header {
+    padding-bottom: 6px;
+
+    border-left: 5px solid var(--iu-crimson);
+
+    padding-left: 20px;
+}
+
+.program-header .hero-eyebrow {
+    margin-bottom: 8px;
+}
+
+.program-heading {
+    margin: 0;
+
+    color: var(--dark);
+
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 1.15;
+}
+
+.program-years {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 18px;
+}
+
+.year-chip {
+    padding: 5px 14px;
+
+    font-size: 0.8rem;
+}
+
+
+/* =========================================================
    Album Section
 ========================================================= */
 
 .album-section {
-    padding: 56px 0 30px;
+    padding: 40px 0 30px;
 
-    scroll-margin-top: 70px;
+    scroll-margin-top: 80px;
 }
 
 .album-header {
@@ -348,7 +461,7 @@
     margin: 46px 0 18px;
 }
 
-.album-grid-header h3 {
+.album-grid-header h4 {
     margin: 0;
 
     color: var(--dark);
@@ -617,6 +730,20 @@
 
     .section-heading {
         font-size: 1.6rem;
+    }
+
+    .program-heading {
+        font-size: 1.9rem;
+    }
+
+    .program-section {
+        padding-top: 44px;
+    }
+
+    .program-chip {
+        padding: 7px 14px;
+
+        font-size: 0.8rem;
     }
 
     .slider-track {

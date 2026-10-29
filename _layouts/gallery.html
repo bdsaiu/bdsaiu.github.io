@@ -29,10 +29,53 @@ Hero
 
 
 <!-- =======================================================
-Albums
+Program navigation
 ======================================================= -->
 
-{% for album in site.data.gallery.albums %}
+<nav class="program-nav" aria-label="Gallery programs">
+
+  <div class="gallery-container">
+
+    {% for program in site.data.gallery.programs %}
+    <a href="#{{ program.slug }}" class="program-chip">{{ program.name }}</a>
+    {% endfor %}
+
+  </div>
+
+</nav>
+
+
+<!-- =======================================================
+Programs, each with one album per year
+======================================================= -->
+
+{% for program in site.data.gallery.programs %}
+
+<section class="program-section" id="{{ program.slug }}">
+
+  <div class="gallery-container">
+
+    <header class="program-header">
+
+      <span class="hero-eyebrow">PROGRAM</span>
+
+      <h2 class="program-heading">{{ program.name }}</h2>
+
+      <p class="section-description">
+        {{ program.description }}
+      </p>
+
+      <div class="program-years">
+        {% for album in program.albums %}
+        <a href="#{{ album.slug }}" class="year-chip">{{ album.year }}</a>
+        {% endfor %}
+      </div>
+
+    </header>
+
+  </div>
+
+{% for album in program.albums %}
 
 {% assign folder = "/assets/images/gallery/" | append: album.slug %}
 {% assign thumb_prefix = folder | append: "/thumb/" %}
@@ -50,9 +93,9 @@ Albums
           {{ album.season | upcase }} · {{ album.date | upcase }}
         </span>
 
-        <h2 class="section-heading">
+        <h3 class="section-heading">
           {{ album.title }}
-        </h2>
+        </h3>
 
         <p class="section-description">
           {{ album.description }}
@@ -127,7 +170,7 @@ Albums
 
     <div class="album-grid-header">
 
-      <h3>All Photos</h3>
+      <h4>All Photos</h4>
 
       <span>Click a photo to view it full size</span>
 
@@ -167,6 +210,10 @@ Albums
     {% endif %}
 
   </div>
+
+</section>
+
+{% endfor %}
 
 </section>
 

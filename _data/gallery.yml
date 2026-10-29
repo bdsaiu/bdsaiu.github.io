@@ -5,48 +5,94 @@ subtitle: >
   events at Indiana University Bloomington.
 
 # ======================================================================
-# Albums (newest first)
+# Programs and their yearly albums
 #
-# To add an event:
-#   1. python3 tools/prepare_album.py <folder with the original photos> <slug>
-#      (writes web-sized copies to assets/images/gallery/<slug>/full and /thumb;
+# The page shows one section per program (in the order below), and inside
+# it one album per year (list the newest year first).
+#
+# To add photos of an event:
+#   1. python3 tools/prepare_album.py <folder with the original photos> <album slug>
+#      (writes web-sized copies to assets/images/gallery/<album slug>/full and /thumb;
 #      keep the original folder out of git, see .gitignore)
-#   2. Add an entry below. Every photo in the album folder is shown in the grid;
+#   2. Add an album entry under its program below (or a new program).
+#      Every photo in the album folder is shown in the grid;
 #      "highlights" (file names in the album folder) are shown in the slideshow.
 # ======================================================================
 
-albums:
+programs:
 
-  - slug: bdsa-fall-picnic-2026
-    title: BDSA Fall Picnic 2026
-    date: October 11, 2026
-    season: Fall 2026
+  - slug: fall-picnic
+    name: Fall Picnic
     description: >
-      Our annual Fall Picnic brought together new and returning students,
-      families, and friends from the Bangladeshi community for an afternoon
-      of food, games, prizes, and autumn colors by the lake.
-    highlights:
-      - img_6748.jpg
-      - 2cb2387561d8f6091551be276976e06c.jpg
-      - img_6651.jpg
-      - img_6684.jpg
-      - img_6765.jpg
-      - bb917c15d773a17c47a61782abbe5f2e.jpg
-      - img_6640.jpg
-      - img_6805.jpg
-      - img_6733.jpg
-      - img_6826.jpg
-      - img_6659.jpg
-      - img_6690.jpg
+      Our annual autumn get-together for students, families, and friends
+      of the Bangladeshi community in Bloomington.
+    albums:
 
-  - slug: bdsa-callout-meeting-2026
-    title: BDSA Call-Out Meeting 2026
-    date: September 6, 2026
-    season: Fall 2026
+      - slug: bdsa-fall-picnic-2026
+        title: BDSA Fall Picnic 2026
+        year: 2026
+        date: October 11, 2026
+        season: Fall 2026
+        description: >
+          Our annual Fall Picnic brought together new and returning students,
+          families, and friends from the Bangladeshi community for an afternoon
+          of food, games, prizes, and autumn colors by the lake.
+        highlights:
+          - img_6748.jpg
+          - 2cb2387561d8f6091551be276976e06c.jpg
+          - img_6651.jpg
+          - img_6684.jpg
+          - img_6765.jpg
+          - bb917c15d773a17c47a61782abbe5f2e.jpg
+          - img_6640.jpg
+          - img_6805.jpg
+          - img_6733.jpg
+          - img_6826.jpg
+          - img_6659.jpg
+          - img_6690.jpg
+
+  - slug: call-out-meeting
+    name: Call-Out Meeting
     description: >
-      The first call-out meeting of the BDSA 2026 committee, where new and
-      returning members met the committee and learned about the
-      association's plans for the year.
-    highlights:
-      - img_2680.jpg
-      - img_4593.jpg
+      The start-of-year meeting where the new BDSA committee welcomes
+      new and returning members.
+    albums:
+
+      - slug: bdsa-callout-meeting-2026
+        title: BDSA Call-Out Meeting 2026
+        year: 2026
+        date: September 6, 2026
+        season: Fall 2026
+        description: >
+          The first call-out meeting of the BDSA 2026 committee, where new and
+          returning members met the committee and learned about the
+          association's plans for the year.
+        highlights:
+          - img_2680.jpg
+          - img_4593.jpg
+
+  - slug: fall-involvement-fair
+    name: Fall Involvement Fair
+    description: >
+      BDSA's stall at the IU Fall Involvement Fair, introducing Bangladesh
+      and the association to the IU community.
+    albums:
+
+      - slug: fall-involvement-fair-2026
+        title: Fall Involvement Fair 2026
+        year: 2026
+        date: August 27, 2026
+        season: Fall 2026
+        description: >
+          Our stall at the IU Fall Involvement Fair, with a map and history
+          of Bangladesh, handicrafts on display, and a "Learn 1 Bengali Word"
+          board where visitors wrote their first word in Bangla.
+        highlights:
+          - img_2636.jpg
+          - img_2621.jpg
+          - img_2624.jpg
+          - img_2615.jpg
+          - img_6191.jpg
+          - img_6194.jpg
+          - img_6197.jpg
+          - stall_bangladesh_map.jpg
